@@ -3,20 +3,20 @@
 ```
 [![SlamDevs](https://telegra.ph/file/132a34e9ca811e28aa240.png)](https://t.me/SlamDevs)
 
-# Slam Mirror Bot
+# StarKing Mirror Bot
 ![GitHub Repo stars](https://img.shields.io/github/stars/breakdowns/slam-mirrorbot?color=blue&style=flat)
 ![GitHub forks](https://img.shields.io/github/forks/breakdowns/slam-mirrorbot?color=green&style=flat)
 ![GitHub contributors](https://img.shields.io/github/contributors/breakdowns/slam-mirrorbot?style=flat)
 ![GitHub watchers](https://img.shields.io/github/watchers/breakdowns/slam-mirrorbot)
 ![Docker Pulls](https://img.shields.io/docker/pulls/breakdowns/mega-sdk-python?label=Docker%20Pull)
 
-**Slam Mirror Bot** is a _multipurpose_ Telegram Bot written in Python for mirroring files on the Internet to our beloved Google Drive. Based on [python-aria-mirror-bot](https://github.com/lzzy12/python-aria-mirror-bot)
+**StarKing Mirror Bot** is a _multipurpose_ Telegram Bot written in Python for mirroring files on the Internet to our beloved Google Drive. Based on [python-aria-mirror-bot](https://github.com/lzzy12/python-aria-mirror-bot)
 
 # Features:
 <details>
     <summary><b>Click Here For More Details</b></summary>
 
-## By Slam Devs
+## By StarKing Devs
 - qBittorrent
 - Leech supported
 - Thumbnail supported
@@ -82,7 +82,7 @@ Deploying is pretty much straight forward and is divided into several steps as f
 
 - Clone this repo:
 ```
-git clone https://github.com/breakdowns/slam-mirrorbot mirrorbot/
+git clone https://github.com/StarKingDevelopers/StarKing-MirrorBot mirrorbot/
 cd mirrorbot
 ```
 
@@ -365,3 +365,4 @@ Thanks to:
 - [`xyou365`](https://github.com/xyou365) for Service Accounts script
 
 And many more people who aren't mentioned here, but can be found in [Contributors](https://github.com/breakdowns/slam-mirrorbot/graphs/contributors).
+
