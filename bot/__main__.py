@@ -31,32 +31,33 @@ def stats(update, context):
     cpuUsage = psutil.cpu_percent(interval=0.5)
     memory = psutil.virtual_memory().percent
     disk = psutil.disk_usage('/').percent
-    stats = f'<b>Bot Uptime:</b> <code>{currentTime}</code>\n' \
-            f'<b>Total Disk Space:</b> <code>{total}</code>\n' \
-            f'<b>Used:</b> <code>{used}</code> ' \
-            f'<b>Free:</b> <code>{free}</code>\n\n' \
-            f'<b>Upload:</b> <code>{sent}</code>\n' \
-            f'<b>Download:</b> <code>{recv}</code>\n\n' \
-            f'<b>CPU:</b> <code>{cpuUsage}%</code> ' \
-            f'<b>RAM:</b> <code>{memory}%</code> ' \
-            f'<b>DISK:</b> <code>{disk}%</code>'
+    stats = f'<u><b>ՏեɑɾƘíղց Տեɑեs</b></u>\n\n' \
+            f'𝐁𝐨𝐭 𝐔𝐩𝐭𝐢𝐦𝐞: <code>{currentTime}</code>\n' \
+            f'𝐓𝐨𝐭𝐚𝐥 𝐃𝐢𝐬𝐤 𝐒𝐩𝐚𝐜𝐞: <code>{total}</code>\n' \
+            f'𝐔𝐬𝐞𝐝: <code>{used}</code> ' \
+            f'𝐅𝐫𝐞𝐞: <code>{free}</code>\n\n' \
+            f'𝐔𝐩𝐥𝐨𝐚𝐝: <code>{sent}</code>\n' \
+            f'𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝: <code>{recv}</code>\n\n' \
+            f'𝐂𝐏𝐔: <code>{cpuUsage}%</code> ' \
+            f'𝐑𝐀𝐌: <code>{memory}%</code> ' \
+            f'𝐃𝐈𝐒𝐊: <code>{disk}%</code>'
     sendMessage(stats, context.bot, update)
 
 
 def start(update, context):
     buttons = button_build.ButtonMaker()
-    buttons.buildbutton("Repo", "https://github.com/SlamDevs/slam-mirrorbot")
-    buttons.buildbutton("Channel", "https://t.me/SlamMirrorUpdates")
+    buttons.buildbutton("🎥PSALK🎥", "https://t.me/PSALK")
+    buttons.buildbutton("Channel", "https://t.me/StarKingBots")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
-This bot can mirror all your links to Google Drive!
-Type /{BotCommands.HelpCommand} to get a list of available commands
+Hi, I'm StarKing mirror Bot. I can mirror your links to Google Drive!
+Type /{BotCommands.HelpCommand} to induce a list of accessible commands
 '''
         sendMarkup(start_string, context.bot, update, reply_markup)
     else:
         sendMarkup(
-            'Oops! not a Authorized user.\nPlease deploy your own <b>slam-mirrorbot</b>.',
+            'Uh oh! not a Authorized StarKing user. Please contact the owner to be a StarKing user.😊.',
             context.bot,
             update,
             reply_markup,
@@ -64,7 +65,7 @@ Type /{BotCommands.HelpCommand} to get a list of available commands
 
 
 def restart(update, context):
-    restart_message = sendMessage("Restarting, Please wait!", context.bot, update)
+    restart_message = sendMessage("Restarting, Please wait...!", context.bot, update)
     # Save restart message object in order to reply to it after restarting
     with open(".restartmsg", "w") as f:
         f.truncate(0)
